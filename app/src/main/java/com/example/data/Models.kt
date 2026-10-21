@@ -48,7 +48,7 @@ data class LibraryStats(
 
 @JsonClass(generateAdapter = true)
 data class QrConfig(
-    @Json(name = "scriptUrl") val scriptUrl: String = "",
+    @Json(name = "scriptUrl") val scriptUrl: String = "https://script.google.com/macros/s/AKfycbwmzWB3f8tUfgXGaaspUtogv-CzfRbe4jJMZnOy6alHxl_syuHmurD2pDCcn0Q7vPCXfw/exec",
     @Json(name = "latitude") val latitude: Double = 23.5462131,
     @Json(name = "longitude") val longitude: Double = 89.1720178,
     @Json(name = "radiusMeters") val radiusMeters: Double = 300.0

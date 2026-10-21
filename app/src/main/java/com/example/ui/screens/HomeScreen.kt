@@ -34,14 +34,14 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Login
+import androidx.compose.material.icons.automirrored.filled.Logout
 import androidx.compose.material.icons.filled.AdminPanelSettings
 import androidx.compose.material.icons.filled.Badge
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.LocationOn
-import androidx.compose.material.icons.filled.Login
-import androidx.compose.material.icons.filled.Logout
 import androidx.compose.material.icons.filled.QrCodeScanner
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Warning
@@ -591,7 +591,7 @@ fun HomeScreen(
                             ) {
                                 Row(verticalAlignment = Alignment.CenterVertically) {
                                     Icon(
-                                        imageVector = Icons.Default.Login,
+                                        imageVector = Icons.AutoMirrored.Filled.Login,
                                         contentDescription = null,
                                         tint = Color(0xFF2E7D32),
                                         modifier = Modifier.size(20.dp)
@@ -605,7 +605,7 @@ fun HomeScreen(
 
                                 Row(verticalAlignment = Alignment.CenterVertically) {
                                     Icon(
-                                        imageVector = Icons.Default.Logout,
+                                        imageVector = Icons.AutoMirrored.Filled.Logout,
                                         contentDescription = null,
                                         tint = Color(0xFFE65100),
                                         modifier = Modifier.size(20.dp)
@@ -670,7 +670,7 @@ fun HomeScreen(
                         contentAlignment = Alignment.Center
                     ) {
                         Icon(
-                            imageVector = if (isEntry) Icons.Default.Login else Icons.Default.Logout,
+                            imageVector = if (isEntry) Icons.AutoMirrored.Filled.Login else Icons.AutoMirrored.Filled.Logout,
                             contentDescription = null,
                             tint = if (isEntry) Color(0xFF2E7D32) else Color(0xFFE65100),
                             modifier = Modifier.size(26.dp)

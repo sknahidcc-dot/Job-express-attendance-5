@@ -65,7 +65,8 @@ class PreferencesManager(context: Context) {
                 // Ignore
             }
         }
-        val url = prefs.getString(KEY_SCRIPT_URL, "") ?: ""
+        val defaultUrl = "https://script.google.com/macros/s/AKfycbwmzWB3f8tUfgXGaaspUtogv-CzfRbe4jJMZnOy6alHxl_syuHmurD2pDCcn0Q7vPCXfw/exec"
+        val url = prefs.getString(KEY_SCRIPT_URL, defaultUrl)?.takeIf { it.isNotBlank() } ?: defaultUrl
         val lat = prefs.getFloat(KEY_LATITUDE, 23.5462131f).toDouble()
         val lng = prefs.getFloat(KEY_LONGITUDE, 89.1720178f).toDouble()
         val radius = prefs.getFloat(KEY_RADIUS, 300f).toDouble()
